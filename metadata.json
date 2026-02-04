@@ -1,0 +1,5 @@
+{
+  "name": "ChessMaster AI",
+  "description": "Современные шахматы с умным ИИ (Minimax + Alpha-Beta Pruning) и стильным интерфейсом.",
+  "requestFramePermissions": []
+}

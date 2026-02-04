@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChessMaster AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              board: {
+                light: '#E8EDF9', // Creamy/Slate light
+                dark: '#B7C0D8',  // Slate blue/grey
+                highlight: 'rgba(255, 255, 0, 0.5)',
+                check: 'rgba(255, 0, 0, 0.4)',
+                lastMove: 'rgba(155, 199, 0, 0.41)',
+              }
+            },
+            boxShadow: {
+              'neumorph': '20px 20px 60px #d1d9e6, -20px -20px 60px #ffffff',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Prevent text selection during drag */
+      .no-select {
+        user-select: none;
+        -webkit-user-select: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-100 text-slate-800 antialiased h-screen overflow-hidden">
+    <div id="root" class="h-full"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
